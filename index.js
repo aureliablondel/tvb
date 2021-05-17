@@ -122,3 +122,4 @@ btnClose.addEventListener('click',closeModal);
 function closeModal() {
 	overlay.style.display='none';
 	}
+
