@@ -2,6 +2,8 @@
 let burgerbtn = document.querySelector('.burger');
 let closebtn = document.querySelector('.closebtn');
 let anchor = document.querySelector('.anchor-link');
+let anchor1 = document.querySelector('.anchor-link1');
+let anchor2 = document.querySelector('.anchor-link2');
 let overlaymenu = document.querySelector('.nav-container');
 
 burgerbtn.addEventListener('click', (event) => {
@@ -17,6 +19,12 @@ anchor.addEventListener('click', (event) => {
     overlaymenu.style.width = "0%";
 });
 
+anchor1.addEventListener('click', (event) => {
+    overlaymenu.style.width = "0%";
+});
+anchor2.addEventListener('click', (event) => {
+    overlaymenu.style.width = "0%";
+});
 
 //  Affichage / masquage du menu burger
 
