@@ -110,16 +110,6 @@ imgBlock[i].addEventListener('mouseout', (event)=>{
 
 
 
-let btnPopup = document.querySelector('.btnPopup');
-let overlay = document.querySelector('.overlay');
-btnPopup.addEventListener('click', (event)=>{
-	overlay.style.display='block';
-});
 
 
-let btnClose = document.getElementById('btnClose');
-btnClose.addEventListener('click',closeModal);
-function closeModal() {
-	overlay.style.display='none';
-	}
-
+	
