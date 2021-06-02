@@ -35,7 +35,7 @@
             <span class="btnCloseNav"><i class="fas fa-times"></i></span> 
               
             <ul class="list-menu" id="list-menu">
-                <li><a class="anchor" href="#abc" >Atlas de la Biodiversité Communale</a></li>
+                <li><a class="anchor" href="#abc">Atlas de la Biodiversité Communale</a></li>
                     <ul class="subliste">
                         <li><a class="anchor" href="#pictos-abc">Observer</a></li>
                         <li><a class="anchor" href="#pictos-abc">Sensibiliser</a></li>
@@ -43,14 +43,25 @@
                     </ul>
             </ul>
             <ul class="list-menu" id="list-menu"> 
-                <li><a class="anchor" href="#trames" >Trames naturelles</a></li>
+                <li><a class="anchor" href="#trames">Trames naturelles</a></li>
                     <ul class="subliste">
-                        <li><a class="anchor" href="#pictos-trames" >Arbres têtards</a></li>
-                        <li><a class="anchor" href="#pictos-trames" >Mares</a></li>
-                        <li><a class="anchor" href="#pictos-trames" >Verger</a></li> 
-                        <li><a class="anchor" href="#pictos-trames" >Autres habitats</a></li>
+                        <li><a class="anchor" href="#pictos-trames">Arbres têtards</a></li>
+                        <li><a class="anchor" href="#pictos-trames">Mares</a></li>
+                        <li><a class="anchor" href="#pictos-trames">Verger</a></li> 
+                        <li><a class="anchor" href="#pictos-trames">Autres habitats</a></li>
                     </ul>                       
-            </ul>     
+            </ul>    
+            <ul class="list-menu" id="list-menu">
+                <li><a class="anchor" href="#help">Aides à l'identification</a></li>
+                    <ul class="subliste">
+                        <li><a class="anchor" href="#pictos-outils">Oiseaux</a></li>
+                        <li><a class="anchor" href="#pictos-outils">Mammifères</a></li>
+                        <li><a class="anchor" href="#pictos-outils">Amphibiens-Reptiles</a></li>
+                        <li><a class="anchor" href="#pictos-outils">Insectes</a></li>
+                        <li><a class="anchor" href="#pictos-outils">Autres animaux</a></li>
+                        <li><a class="anchor" href="#pictos-outils">Plantes</a></li>
+                    </ul>
+            </ul> 
         </nav>          
 
         <!-- Bouton pour saisie des observations -->            
@@ -90,14 +101,14 @@
         
     </header>   
 
-    <main class="main-container" id="abc">
+    <main class="main-container">
+        <!-- Section ABC -->
+        <section class="abc" id="abc">        
+            <h2 class="split-banner">Atlas de la Biodiversité Communale</h2>                
+            <h3 class="title-intro">R&Eacute;V&Eacute;LER L'EXTRAORDINAIRE RICHESSE NATURELLE QUI NOUS ENTOURE !</h2>
+            <p class="p-intro">Initiée en 2010 par le ministère de l’Écologie, cette démarche collaborative a pour objectif de révéler l’extraordinaire richesse naturelle qui nous entoure afin que les communes puissent en tenir compte dans leurs décisions d’aménagements. Animé au plan local par le Parc naturel régional du Golfe du Morbihan depuis 2018, l’Atlas de la biodiversité communale (ABC) constitue un point de départ pour instaurer un dialogue entre élus, gestionnaires et. Un projet en 3 axes principaux :</p>
         
-        <div class="split-banner">Atlas de la Biodiversité Communale</div>
-                
-        <h2 class="title-intro">R&Eacute;V&Eacute;LER L'EXTRAORDINAIRE RICHESSE NATURELLE QUI NOUS ENTOURE !</h2>
-        <p class="p-intro">Initiée en 2010 par le ministère de l’Écologie, cette démarche collaborative a pour objectif de révéler l’extraordinaire richesse naturelle qui nous entoure afin que les communes puissent en tenir compte dans leurs décisions d’aménagements. Animé au plan local par le Parc naturel régional du Golfe du Morbihan depuis 2018, l’Atlas de la biodiversité communale (ABC) constitue un point de départ pour instaurer un dialogue entre élus, gestionnaires et. Un projet en 3 axes principaux :</p>
-        
-        <section class="abc-menu" id="pictos-abc">			
+            <section class="abc-menu" id="pictos-abc">			
 			
 				<div class="menu-box btnPopup">
 					<div class="apicto"><img src="images/picto-loupe.png" alt="picto loupe" title="" /></div>
@@ -150,7 +161,7 @@
                         </div>
                     </article>
                 </div>			
-			
+			</section>
 		</section>        
         
         <div class="split-banner" id="trames">Inventaire des Trames Naturelles</div>
@@ -247,9 +258,138 @@
                     </article>
                 </div>
             </div>			
-		</section>        
-        
+		</section> 
+
+        <!-- Section identification -->
+        <section class="help">
+            <h2 class="split-banner" id="help">Aides à l'identification</h2>
+            <!-- bloc pictos -->            
+            <section class="bloc-pictos" id="pictos-outils">
+                <!-- Lien identification oiseaux -->
+                <article class="bloc-picto">
+                    <a href="https://www.oiseaux.net/identifier/" target="_blank">
+                    <div class="bloc-picto-img">
+                        <img src="images/pictos-aide/picto-oiseau.png" alt="picto oiseau">
+                    </div>
+                    <div class="bloc-picto-liens">
+                        <h3>Oiseaux</h3>
+                    </div>
+                    </a>                    
+                </article>
+                <!-- Liens identification mammifères -->
+                <article class="bloc-picto">
+                    <div class="bloc-picto-img btnPopup">
+                        <img src="images/pictos-aide/picto-mammifere.png" alt="picto lapin">
+                    </div>
+                    <div class="bloc-picto-liens">
+                        <h3>Mammifères</h3>                                                              
+                    </div>
+                    <!-- Popup choix du lien -->
+                    <div class="overlay">
+                        <div class="list-links">
+                            <span class="btnClosePopup">&times;</span>
+                            <ul>
+                                <li><a href="http://gmb.bzh/wp-content/uploads/2015/11/2014_PlaquetteGreniers.pdf" target="_blank">Mammifères des greniers</a></li>
+                                <li><a href="http://gmb.bzh/wp-content/uploads/2016/05/PlaquetteJardin.pdf" target="_blank">Mammifères des jardins</a></li>
+                            </ul>
+                        </div>
+                    </div>                             
+                </article>                
+
+                <!-- Liens identification amphibiens -->
+                <article class="bloc-picto">
+                    <div class="bloc-picto-img btnPopup">
+                        <img src="images/pictos-aide/picto-herpeto.png" alt="picto grenouille">
+                    </div>
+                    <div class="bloc-picto-liens">
+                        <h3>Amphibiens Reptiles</h3>                                                              
+                    </div>
+                    <!-- Popup choix du lien -->
+                    <div class="overlay">
+                        <div class="list-links">
+                            <span class="btnClosePopup">&times;</span>
+                            <ul>
+                                <li><a href="https://cdnfiles1.biolovision.net/www.faune-loire-atlantique.org/userfiles/utilitairesamphibiens/cleanouresbzh2008.pdf" target="_blank">Grenouilles et crapauds</a></li>
+                                <li><a href="https://cdnfiles1.biolovision.net/www.faune-loire-atlantique.org/userfiles/utilitairesamphibiens/cleurodelesbzh2008.pdf" target="_blank">Salamandres et tritons</a></li>
+                                <li><a href="https://www.vivarmor.fr/wp-content/uploads/2017/12/Cle_de_determination_des_reptiles_des_Cotes_d_v7.pdf" target="_blank">Reptiles</a></li>
+                            </ul>
+                        </div>
+                    </div>                             
+                </article>                
+
+                <!-- Liens identification insectes -->
+                <article class="bloc-picto">
+                    <div class="bloc-picto-img btnPopup">
+                        <img src="images/pictos-aide/picto-entomo.png" alt="picto papillon">
+                    </div>
+                    <div class="bloc-picto-liens">
+                        <h3>Insectes</h3>                                                              
+                    </div>
+                    <!-- Popup choix du lien -->
+                    <div class="overlay">
+                        <div class="list-links">
+                            <span class="btnClosePopup">&times;</span>
+                            <ul>
+                                <li><a href="https://www.lepinet.fr/identifier/miniatures.php?e=p" target="_blank">Papillons</a></li>
+                                <li><a href="http://www.nature22.com/odonates22/pour_commencer/classification.html" target="_blank">Libellules</a></li>
+                                <li><a href="https://nature22.com/coccinelles22/galerie_photo.html" target="_blank">Coccinelles</a></li>
+                                <li><a href="https://quelestcetanimal-lagalerie.com/" target="_blank">Autres insectes</a></li>
+                            </ul>
+                        </div>
+                    </div>                             
+                </article>                        
+
+                <!-- Liens identification champignons -->
+                <article class="bloc-picto">
+                    <a href="https://www.guidedeschampignons.com/identification-champignon/" target="_blank">
+                    <div class="bloc-picto-img">
+                        <img src="images/pictos-aide/picto-champignon.png" alt="picto champignon">
+                    </div>
+                    <div class="bloc-picto-liens">
+                        <h3>Champignons</h3>                                                
+                    </div>   
+                    </a>                 
+                </article>
+
+                <!-- Liens identification plantes -->
+                <article class="bloc-picto">
+                    <a href="https://plantnet.org/" target="_blank">
+                    <div class="bloc-picto-img">
+                        <img src="images/pictos-aide/picto-plante.png" alt="picto fleur">
+                    </div>
+                    <div class="bloc-picto-liens">
+                        <h3>Plantes</h3>                                                
+                    </div>
+                    </a>                    
+                </article>
+
+                <!-- Liens identification faune et flore marine -->
+                <article class="bloc-picto">
+                    <div class="bloc-picto-img btnPopup">
+                        <img src="images/pictos-aide/picto-estran.png" alt="picto vague">
+                    </div>
+                    <div class="bloc-picto-liens">
+                        <h3>Faune et flore marines</h3>                                                              
+                    </div>
+                    <!-- Popup choix du lien -->
+                    <div class="overlay">
+                        <div class="list-links">
+                            <span class="btnClosePopup">&times;</span>
+                            <ul>
+                                <li><a href="https://www.biolit.fr/sites/default/files/biolitheque/2018identificationbiolitabb.pdf" target="_blank">Faune et flore de l'estran</a></li>
+                                <li><a href="https://drive.google.com/file/d/1ddwW8PZDMiqX_EVrd4SmvrDUYezOB7sm/view" target="_blank">Faune de l'estran</a></li>
+                                <li><a href="https://www.gecc-normandie.org/wp-content/uploads/2017/10/Affiche-35x60-cm-ObsenMer-esp%C3%A8ces.pdf" target="_blank">Faune marine</a></li>
+                            </ul>
+                        </div>
+                    </div>                             
+                </article>              
+
+            </section>
+        </section>
             
+            
+            
+
             <a href="#top" id="button-return">
               <i class="fas fa-arrow-up arrow"></i>
             </a>
@@ -259,7 +399,7 @@
     <script src="js/burger.js"></script>    
     <script src="js/popup.js"></script>
     <script src="js/scroll.js"></script>
-    <script src=""></script>
+    <script src="showLink.js"></script>
     <script src="index.js"></script>
     
 </body>
