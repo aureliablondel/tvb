@@ -11,14 +11,15 @@ html{
 body{
     width: 100%;
 }
-/* ================== HEADER ================*/
+/* ========================== HEADER =========================*/
 .header-container{
     width: 100%;
     height: 100vh;     
     background-image: url('../images/verger.jpg');
 }
-/* ---------- Bannière titre --------- */
-.banner{    
+
+/* ----------------- Bannière titre -------------- */
+.header-container .banner{    
     display: flex;
     justify-content: space-between;
     background-color: #3c8158;
@@ -28,13 +29,13 @@ body{
     right: 0;    
     z-index: 1;  
 }
-.logo-pnrgm{
+.header-container .banner .logo-pnrgm{
     max-height: 80px;    
 }
-.logo-pnrgm img{
+.header-container .banner .logo-pnrgm img{
     height: 100%;    
 }
-.title-block{   
+.header-container .banner .title-block{   
     color: white;    
     text-align: center;
     vertical-align: middle;
@@ -43,15 +44,16 @@ body{
     height: 80%;
     margin: auto;
 }
-.burger{    
+.header-container .banner .burger{    
     color: rgba(228, 228, 228, 1);
     cursor: pointer;
     font-size: 1.7rem; 
     text-align: right;
-    padding: 5px 15px;     
+    padding: 15px;     
 } 
-/* ------------- Menu rideau ---------- */
-.nav-container{
+
+/* ---------------- Menu rideau ---------------- */
+.header-container .nav-container{
     height:100vh;
     width: 0%;
     position: fixed;
@@ -60,13 +62,13 @@ body{
     top: 0;
     background-color: #2f666a;
     overflow-x: hidden;
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
 }
-.btnCloseNav{
+.header-container .nav-container .btnCloseNav{
     position: absolute;
     top: 5px;
     right: 15px;
@@ -74,13 +76,13 @@ body{
     color: white;
     cursor: pointer;   
 }
-.list-menu{    
+.header-container .nav-container .list-menu{    
     text-align: left;
     padding-left: 20px; 
     margin-top: 40px; 
-    width: fit-content;    
+    width: fit-content;   
 }
-.list-menu li{
+.header-container .nav-container .list-menu li{
     padding: 8px;
     text-decoration: none;
     font-size: 1rem;
@@ -88,16 +90,20 @@ body{
     color: #818181;
     list-style-type: none;   
 }   
-.list-menu li a{
+.header-container .nav-container .list-menu li a{
     color: rgba(228, 228, 228, 1);
     text-decoration: none;    
 }
-.subliste{
+.header-container .nav-container .list-menu .sublist{
     display: none;
+}
+.header-container .nav-container .ligne{
+    border-bottom: 1px solid white; 
+    margin: 40px 30px 0;    
 }
 
 /* -------------- Bouton d'accès à la saisie ------------- */
-.btnPopup-saisie{
+.header-container .btnPopup-saisie{
     background: #3c8158;
     position: absolute;
     left: 50%;
@@ -107,12 +113,7 @@ body{
     color: #fff;
     font-size: 0.6rem;
     font-weight: 0;
-    text-decoration: none;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;   
+    text-decoration: none;    
     padding: 20px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -121,22 +122,19 @@ body{
     -o-border-radius: 20px;
     cursor: pointer;
     width: 120px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;   
 }
-.btnPopup-saisie .mark{   
+.header-container .btnPopup-saisie .mark{   
     font-size: 2rem;
     margin-top: 20px;
 }
-.btnPopup-saisie:hover{
-    background-color: white;
-    color: #3c8158;
-    transform: scale(1.2) translate(-43%);
-    -webkit-transform: scale(1.2) translate(-43%);
-    -moz-transform: scale(1.2) translate(-43%);
-    -ms-transform: scale(1.2) translate(-43%);
-    -o-transform: scale(1.2) translate(-43%);
-}
+
 /* ------------ Popup sélection du type d'observation ------------ */
-.overlay{
+.header-container .overlay, .main-container .overlay{
     position: fixed;
     left: 0;
     right: 0;
@@ -146,28 +144,27 @@ body{
     z-index:1;
     display:none;     
 }
-.popup{     
+.header-container .overlay .popup-saisie, .main-container .overlay .popup{     
     position: fixed; 
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(243, 243, 243, 1);
-    padding: 20px;
-    /* box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;      */
+    background: rgba(243, 243, 243, 1);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
 }
-.btnClosePopup{
-    float: right;
-    margin: -10px 10px;
+.header-container .overlay .popup-saisie .btnClosePopup, .main-container .btnClosePopup{   
     font-size:1.8rem;
     cursor: pointer;
-    color: rgb(26, 26, 26);
+    color: rgb(26, 26, 26);   
+    margin: -30px 0 20px;
 }      
-.popup h2{
+.header-container .overlay .popup-saisie h2{
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-bottom: 20px;    
     color: #3c8158;
     font-size: 1.2rem;
 }
@@ -187,12 +184,11 @@ body{
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 .btnchoice img{
-    width: 100%;
+    width: 80%;
 }
 .main-container{
     width: 80%;
-    margin: auto;
-    /* padding-top: 30px; */
+    margin: auto;    
 }
 .split-banner{
     background-color: #2f666a;
@@ -212,16 +208,18 @@ body{
     display: flex;
     width: 100%;
     max-width: 300px;
-    margin: 30px auto;   
-    justify-content: space-between;
+    margin: auto;   
+    justify-content: center;
 }
 .trames-menu{
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
 }
 .menu-box{
      text-align: center;
-     width: 46%;     
+     width: 45%;     
      cursor: pointer;
+     margin-bottom: 20px;
      
      
  }
@@ -249,8 +247,8 @@ body{
     height: 100%;
     
 }
-.pictos-bloc img{
-    width: 80%;
+.apicto-trames img{
+    width: 70%;
 
 }
 .atext{
@@ -447,26 +445,67 @@ ul.p-intro{
 .button-return{
     display: none;
 }
-
-
-
-
-
-@media screen and (min-width: 900px) {
-
-.title-block{
-    font-size: 0.7rem; 
+.footer-container{
+    background-color: #3c8158;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
 }
-.burger{
+.footer-container a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* ===============================================
+                POUR UN ECRAN > 768PX 
+==================================================  */
+@media screen and (min-width: 768px) {
+
+/* ================== HEADER ==================== */
+.header-container .title-block h1{
+    font-size: 1.2rem; 
+}
+.header-container .burger{
     font-size: 2rem;
 }
-.nav-container{
-    width: 30%;
+.header-container .nav-container .list-menu .sublist{
+    display: block;
 }
-.subliste li{
+.header-container .nav-container .list-menu .sublist li{
     margin-left: 20px;
     font-size: 0.8rem;
 }
+.header-container .btnPopup-saisie{
+    width: 30%;    
+    font-size: 1rem;    
+}
+.header-container .btnPopup-saisie:hover{
+    background-color: white;
+    color: #3c8158;
+    transform: scale(1.2) translate(-43%);
+    -webkit-transform: scale(1.2) translate(-43%);
+    -moz-transform: scale(1.2) translate(-43%);
+    -ms-transform: scale(1.2) translate(-43%);
+    -o-transform: scale(1.2) translate(-43%);   
+}
+.header-container .popup-saisie, .main-container .popup{   
+    width: 60%;
+    height: 70%;
+    margin: auto;       
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;     
+}
+.header-container .btnClosePopup, .main-container .btnClosePopup{
+    margin: -30px 0 20px;
+}
+.header-container .overlay .popup-saisie h2{
+    margin-bottom: 50px;
+}
+
 .main-container{
     width: 70%;    
 }
@@ -475,7 +514,10 @@ ul.p-intro{
     max-width: 500px;
 }
 .trames-menu{
-    flex-direction: row; 
+    
+    /* flex-direction: row; */
+     
+    
     max-width: 800px;   
 }
 
@@ -498,6 +540,7 @@ ul.p-intro{
     border-radius: 5px; 
 }
 .button-return{
+    display: block;
     background-color: #717171;
     opacity: 0.5;
     color: white;
@@ -511,4 +554,15 @@ ul.p-intro{
     /*display: none;*/
 }
     
+}
+/* ===============================================
+                POUR UN ECRAN > 1024 PX 
+==================================================  */
+
+@media screen and (min-width: 1024px) {
+    
+
+.header-container .overlay .popup-saisie .block-choice{
+    display: flex;    
+}
 }

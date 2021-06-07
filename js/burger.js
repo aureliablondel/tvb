@@ -3,8 +3,13 @@
 let burger = document.querySelector('.burger');
 let togglemenu = document.querySelector('.nav-container');
 
-burger.addEventListener('click', () => {
-    togglemenu.style.width = "50%";
+burger.addEventListener('click', () => {      
+    if(window.screen.width < 768){
+        togglemenu.style.width = "50%";
+    }
+    else{
+        togglemenu.style.width = "30%";
+    }  
 });
   
 // Fermeture du menu rideau

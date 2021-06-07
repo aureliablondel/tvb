@@ -1,5 +1,5 @@
 // Affichage des popups
-// Saisie observations - Pictos ABC - Pictos Trames naturelles
+// Saisie observations - Pictos ABC - Pictos Trames naturelles - Pictos aide
 
 let btnPopup = document.getElementsByClassName('btnPopup');
 let overlay = document.getElementsByClassName('overlay');
