@@ -30,7 +30,8 @@ body{
     z-index: 1;  
 }
 .header-container .banner .logo-pnrgm{
-    max-height: 80px;    
+    max-height: 80px;
+    width: 55px;    
 }
 .header-container .banner .logo-pnrgm img{
     height: 100%;    
@@ -104,7 +105,7 @@ body{
 
 /* -------------- Bouton d'accès à la saisie ------------- */
 .header-container .btnPopup-saisie{
-    background: #3c8158;
+    background: #3c8158;   
     position: absolute;
     left: 50%;
     top: 45%;
@@ -156,11 +157,12 @@ body{
     align-items: center;
     justify-content: center;    
 }
-.header-container .overlay .popup-saisie .btnClosePopup, .main-container .btnClosePopup{   
-    font-size:1.8rem;
+.header-container .overlay .popup-saisie .btnClose-popupSaisie{   
+    font-size: 2rem;
     cursor: pointer;
-    color: rgb(26, 26, 26);   
-    margin: -30px 0 20px;
+    color: rgb(26, 26, 26);       
+    margin-right: 20px;    
+    align-self: flex-end;   
 }      
 .header-container .overlay .popup-saisie h2{
     text-align: center;
@@ -222,24 +224,7 @@ body{
      margin-bottom: 20px;
      
      
- }
-/* .menu-box a{
-	text-decoration : none;
-} */
-/* .menu-box:hover, .menu-box:active{
-	background : url('../images/index/vert2s.png') repeat-x;
-	background-position : bottom;
-	transition : all 0.5s;
-} */
-
-/* .menu-box-txt{
-	color : #fff;
-	font-size : 14px;
-	font-weight : 500;
-	display : block;
-	margin-top : 2px;
-	letter-spacing : 1px;
-} */
+}
 .apicto img{
 	/* display : block; */
 	/* height : 80px; */
@@ -310,6 +295,15 @@ ul.p-intro{
     padding-right: 20px;
     padding-top: 20px;
     
+}
+.btnClose-popupAxe{
+font-size: 2rem;
+    cursor: pointer;
+    color: rgb(26, 26, 26);       
+    padding-right: 30px;   
+    padding-top: 30px; 
+    /* align-self: flex-end;    */
+    float:right;
 }
 .title-trame{
     display: flex;
