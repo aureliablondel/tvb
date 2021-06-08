@@ -30,7 +30,7 @@ body{
     z-index: 1;  
 }
 .header-container .banner .logo-pnrgm{
-    max-height: 80px;
+    height: 80px;
     width: 55px;    
 }
 .header-container .banner .logo-pnrgm img{
