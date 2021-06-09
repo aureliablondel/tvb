@@ -170,13 +170,13 @@ body{
     color: #3c8158;
     font-size: 1.2rem;
 }
-.choice{
+.header-container .overlay .popup-saisie .choice{
     width: 100%;
     text-align: center;
     margin-bottom: 30px; 
     font-size: 0.8rem;       
 }
-.btnchoice{       
+.header-container .overlay .popup-saisie .choice .btnchoice{       
     color: white;
     text-decoration: none;
     border: 1px solid;
@@ -185,14 +185,16 @@ body{
     margin: auto;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
-.btnchoice img{
+.header-container .overlay .popup-saisie .choice .btnchoice img{
     width: 80%;
 }
+/* ======================== MAIN ====================== */
 .main-container{
     width: 80%;
     margin: auto;    
 }
-.split-banner{
+/* --------------- Section ABC ------------------ */
+.main-container .abc .split-banner, .main-container .trames .split-banner, .main-container .help .split-banner{
     background-color: #2f666a;
     color: white;
     font-size: 1.5rem;
@@ -201,164 +203,117 @@ body{
     margin-bottom: 30px;
     padding: 10px;
 }
-.title-intro{
+.main-container .abc .title-intro, .main-container .trames .title-intro{
     margin-bottom: 20px;
     color : #078157;
     font-size: 1.2rem;
 }
-.abc-menu, .trames-menu{
+.main-container .abc .p-intro, .main-container .trames .p-intro{	
+	text-align : justify;
+	font-size : 0.8rem;	
+    margin-bottom: 30px;
+}
+.main-container .abc .abc-menu, .main-container .trames .trames-menu{
     display: flex;
     width: 100%;
     max-width: 300px;
     margin: auto;   
     justify-content: center;
 }
-.trames-menu{
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-}
-.menu-box{
+.main-container .abc .abc-menu .menu-box, .main-container .trames .trames-menu .menu-box{
      text-align: center;
      width: 45%;     
      cursor: pointer;
-     margin-bottom: 20px;
-     
-     
+     margin-bottom: 20px;    
 }
-.apicto img{
-	/* display : block; */
-	/* height : 80px; */
+.main-container .abc .abc-menu .menu-box .apicto img{	
     width: 100%;
-    height: 100%;
-    
+    height: 100%;    
 }
-.apicto-trames img{
-    width: 70%;
-
-}
-.atext{
-	/* display : block; */
-	background : #078157;
-	/* height : 30px; */
+.main-container .abc .abc-menu .menu-box .atext, .main-container .trames .trames-menu .menu-box .atext{	
+	background : #078157;	
 	padding: 5px;
 	color : #fff;
 	text-decoration : none;
-    font-size: 0.7rem;
-    
+    font-size: 0.7rem;    
 }
-/* .atext:hover{
-	background : #007042;
-} */
-	
-/* #axes{
-	width : 100%;
-	margin-left : auto;
-	margin-right : auto;
-	margin-top : 55px;
-} */
-.p-intro{
-	/* color : #078157; */
+/* .main-container .abc .abc-menu .overlay : ligne 138 */
+
+.main-container .abc .abc-menu .overlay .box-axe, .main-container .trames .trames-menu .overlay .box-axe{	
+	background : #f2f2f2;	
+    width: 100%;
+    height: 100%;    
+    display: flex;
+    flex-direction: column;    
+}
+.main-container .abc .abc-menu .overlay .box-axe .btnClose-popupAxe, .main-container .trames .trames-menu .overlay .box-axe .btnClose-popupAxe{
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(26, 26, 26);       
+    padding-right: 30px;   
+    padding-top: 30px;     
+    align-self: flex-end;
+}
+.main-container .abc .abc-menu .overlay .box-axe .axe-nb, .main-container .trames .trames-menu .overlay .box-axe .axe-nb{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 25px;
+    font-size: 1.5rem;
+    font-weight: 700;    
+    color: #078157;    
+    font-family: Lato;
+    border-bottom: 10px solid #078157;    
+}
+.main-container .abc .abc-menu .overlay .box-axe .axe-txt h3, .main-container .trames .trames-menu .overlay .box-axe .axe-txt h3{    
 	text-align : justify;
-	font-size : 0.8rem;
-	/* font-weight : 400; */
-    margin-bottom: 30px;
+	font-size : 16px;
+	font-weight : 500;	
+	margin-bottom : 15px;
+    width: 80%;
+    margin: auto;
+}
+.main-container .abc .abc-menu .overlay .box-axe .axe-txt p, .main-container .trames .trames-menu .overlay .box-axe .axe-txt p{
+    width: 80%;
+    margin: auto;
+	font-size : 13px;
+	color : #717171;
+	text-align : justify;	
+    height: 300px;
+    overflow: auto;    
+}
+/* --------------------section trames naturelles----------------- */
+.main-container .trames .trames-menu{   
+    flex-wrap: wrap;
 }
 @counter-style vague{
     system: cyclic;
     symbols: "~";
     suffix: " ";
 }
-ul.p-intro{
+.main-container .trames ul.p-intro{
     list-style: vague;
 }
-.p-intro li{
+.main-container .trames .p-intro li{
     margin-left: 30px;   
 }
-.pictos-bloc{
-    display: flex;
-    
-    justify-content: center;
-    width: 100%;
+.main-container .trames .trames-menu .menu-box .apicto img{
+    width: 60%;
+}
+/* .main-container .trames .trames-menu .overlay : ligne 138*/
+/* .main-container .trames .trames-menu .overlay .box-axe : ligne 242 */
+/* .main-container .trames .trames-menu .overlay .box-axe .btnClose-popupAxe : ligne 251 */
+/* .main-container .trames .trames-menu .overlay .box-axe .axe-nb : ligne 259 */
+/* .main-container .trames .trames-menu .overlay .box-axe .axe-txt p : ligne 278 */
+
+.main-container .trames .trames-menu .overlay .box-axe .axe-txt p{   
+    height: 200px;
+}
+.main-container .trames .trames-menu .overlay .box-axe .illustration{
+    display: none;
 }
 
-
-
-.box-axe{
-	/* margin-top : 30px;
-	margin-bottom : 10px; */
-	background : #f2f2f2;
-	/* padding : 15px 20px; */
-	/* display : flex; */
-	/* flex-direction: row; */
-    width: 100%;
-    height: 100%;
-    padding-right: 20px;
-    padding-top: 20px;
-    
-}
-.btnClose-popupAxe{
-font-size: 2rem;
-    cursor: pointer;
-    color: rgb(26, 26, 26);       
-    padding-right: 30px;   
-    padding-top: 30px; 
-    /* align-self: flex-end;    */
-    float:right;
-}
-.title-trame{
-    display: flex;
-}
-.img-block{
-    width: 30%;
-    margin: auto;
-    /* float: right; */
-}
-.axe-nb{
-    width: 80%;
-    margin: auto;
-    padding-top: 25px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    /* writing-mode: sideways-lr; */
-    color: #078157;
-    /* text-align: center; */
-    font-family: Lato;
-    border-bottom: 10px solid #078157;
-    /* padding-right: 20px; */
-    /* margin-right: 20px; */
-    /* -webkit-writing-mode: sideways-lr;
-    -ms-writing-mode: sideways-lr; */
-}
-/* .axe-txt{
-	flex-grow: 1;
-	width : 60px;
-	position : relative;
-	
-} */
-.axe-txt h3{
-    
-	text-align : justify;
-	font-size : 16px;
-	font-weight : 500;
-	margin-top :40px;
-	margin-bottom : 15px;
-    width: 80%;
-    margin: auto;
-}
-.axe-txt p{
-    width: 80%;
-    margin: auto;
-	font-size : 13px;
-	color : #717171;
-	text-align : justify;
-	/* display : none; */
-	/* min-width : 100%; */
-    height: 300px;
-    overflow: auto;
-    
-}
 /* ====================== Section identification =================== */
-.help{
+.main-container .help{
     margin-bottom: 30px;
 }
 .help .bloc-pictos{
@@ -407,15 +362,15 @@ font-size: 2rem;
     background: #f2f2f2;
     width: 70%;
     margin: 40% auto;
-    padding: 20px;
-    
+    padding: 20px;    
 }
-/* .help .bloc-pictos .bloc-picto .overlay .list-links .btnClosePopup : ligne 160 */
-
+.help .bloc-pictos .bloc-picto .overlay .list-links .btnClose-popupLinks{
+    font-size: 2rem;
+    cursor: pointer;
+}
 .help .bloc-pictos .bloc-picto .overlay .list-links ul{
     display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
+    flex-wrap: wrap;   
     align-items: center;
     justify-content: center;
     margin: 30px auto;    
@@ -435,24 +390,22 @@ font-size: 2rem;
 .help .bloc-pictos .bloc-picto .overlay .list-links ul li a{
     color: white;    
 }
-
+/* ----------------- retour en haut de page -----------------  */
 .button-return{
     display: none;
 }
+/* ============================ FOOTER ======================= */
 .footer-container{
     background-color: #3c8158;
     color: white;
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    
+    width: 100%;    
 }
 .footer-container a{
     text-decoration: none;
     color: white;
 }
-
-
 
 /* ===============================================
                 POUR UN ECRAN > 768PX 
@@ -486,52 +439,111 @@ font-size: 2rem;
     -ms-transform: scale(1.2) translate(-43%);
     -o-transform: scale(1.2) translate(-43%);   
 }
-.header-container .popup-saisie, .main-container .popup{   
-    width: 60%;
-    height: 70%;
+.header-container .popup-saisie{   
+    width: 50%;
+    height: 60%;
     margin: auto;       
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;     
+    border-radius: 5px;       
 }
-.header-container .btnClosePopup, .main-container .btnClosePopup{
-    margin: -30px 0 20px;
-}
-.header-container .overlay .popup-saisie h2{
-    margin-bottom: 50px;
+.header-container .btnClose-popupSaisie{
+    padding-right: 50px;
 }
 
+/* ======================== MAIN ====================== */
 .main-container{
-    width: 70%;    
+    width: 80%;        
 }
-.abc-menu{
-    width: 50%;
-    max-width: 500px;
+.main-container .abc .abc-menu .menu-box{
+    width: 30%;
 }
-.trames-menu{
-    
-    /* flex-direction: row; */
-     
-    
-    max-width: 800px;   
-}
-
 .atext{
     font-size: 1rem;
 }
-.box-axe{
+.main-container .abc .abc-menu .overlay .box-axe{
     width: 70%;
     height: 50%;
-	margin : 25vh auto;
-	/* margin-bottom : 10px; */
-	/* background : #f2f2f2; */
-	/* padding : 15px 20px; */
-	/* display : flex; */
-	/* flex-direction: row; */
-    /* width: 100%;
-    height: 100%; */
+	margin : 25vh auto;	
     padding-top: 20px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
     border-radius: 5px; 
+}
+.btnClose-popupAxe{
+    margin-right: 40px;
+}
+.main-container .trames .trames-menu{   
+    flex-wrap: nowrap;
+    max-width: 80%;
+}
+.main-container .trames .trames-menu .menu-box .apicto{
+    width: 70%;
+    margin: auto;
+}
+.main-container .trames .trames-menu .menu-box .apicto img{
+    width: 100%;
+}
+.main-container .trames .trames-menu .overlay .box-axe{
+    width: 80%;
+    height: 80%;
+    margin: 10vh auto;
+    background-color: white;
+}
+.main-container .trames .trames-menu .overlay .box-axe .illustration{
+    display: block;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+}
+.main-container .trames .trames-menu .overlay .box-axe .illustration img{
+    width: 100%;
+}
+.button-return{
+    display: none;    
+}    
+}
+/* ===============================================
+                POUR UN ECRAN > 1024 PX 
+==================================================  */
+
+@media screen and (min-width: 1024px) {    
+
+.header-container .overlay .popup-saisie .block-choice{
+    display: flex;    
+}
+.main-container .abc .p-intro, .main-container .trames .p-intro{
+    font-size: 1rem;
+}
+.main-container .abc .abc-menu{
+    max-width: 80%;
+}
+.main-container .abc .abc-menu .menu-box{
+    width: 120px;
+}
+.main-container .abc .abc-menu .overlay .box-axe{
+    margin:20vh auto;
+    height: 60%;
+}
+.main-container .trames .trames-menu .menu-box{
+    width: 180px;
+}
+.main-container .trames .trames-menu .menu-box .atext, .main-container .abc .abc-menu .menu-box .atext{
+    font-size: 1rem;
+}
+.main-container .trames .trames-menu .overlay .box-axe .imgandtxt{
+    display: flex;  
+    padding: 0 50px;  
+}
+.main-container .trames .trames-menu .overlay .box-axe .imgandtxt .illustration{
+    width: 30%;   
+    display: flex;
+    justify-content: right;
+    padding-bottom: 20px;
+}
+.main-container .trames .trames-menu .overlay .box-axe .imgandtxt .illustration img{
+    width: 80%;      
+}
+.main-container .trames .trames-menu .overlay .box-axe .imgandtxt .axe-txt{
+    width: 70%;    
 }
 .button-return{
     display: block;
@@ -539,24 +551,12 @@ font-size: 2rem;
     opacity: 0.5;
     color: white;
     text-align: center;
-    padding-top: 5px;
+    padding: 10px;
     width: 30px;
     height: 30px;
     position: fixed;
     bottom: 0;
-    right: 0;
-    /*display: none;*/
-}
-    
-}
-/* ===============================================
-                POUR UN ECRAN > 1024 PX 
-==================================================  */
-
-@media screen and (min-width: 1024px) {
-    
-
-.header-container .overlay .popup-saisie .block-choice{
-    display: flex;    
+    right: 0;    
+    font-size: 1.5rem;  
 }
 }
