@@ -29,3 +29,20 @@ for(let i=0; i<anchor.length; i++){
         togglemenu.style.width = "0%";
     });
 };
+
+// Affichage politique confidentialité
+
+let polconf = document.querySelector('.btn-polconf');
+let togglepolconf = document.querySelector('.text-polconf');
+
+polconf.addEventListener('click', () => {
+    togglepolconf.style.height = '100%';    
+});
+
+// Fermeture politique confidentialité
+
+let btnClose = document.querySelector('.btnClose-polconf');
+
+btnClose.addEventListener('click', () => {
+    togglepolconf.style.height = "0%";
+});
