@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Observatoire</title>
+    <title>Observatoire de la biodiversité du Golfe du Morbihan</title>
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" /> 
     <link href="//fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet" /> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -22,7 +22,7 @@
             </div>
             <!-- Titre site -->
             <div class="title-block">
-                <h1>INVENTAIRE DE LA BIODIVERSITE ET DES TRAMES NATURELLES</h1>
+                <h1>INVENTAIRE DE LA BIODIVERSITE ET DU PATRIMIONE NATUREL</h1>
             </div>
             <!-- Icône burger -->
             <div class="burger">
@@ -44,7 +44,7 @@
             </ul>
             <p class="ligne"></p>
             <ul class="list-menu" id="list-menu"> 
-                <li><a class="anchor" href="#trames">Trames naturelles</a></li>
+                <li><a class="anchor" href="#trames">Patrimoine naturel</a></li>
                     <ul class="sublist">
                         <li><a class="anchor" href="#pictos-trames">Arbres têtards</a></li>
                         <li><a class="anchor" href="#pictos-trames">Mares</a></li>
@@ -67,7 +67,13 @@
         </nav> 
         
         <!-- Slider -->
-        <div class="slider"></div>
+        <div class="slides">                        
+            <img src="images/img-slider/tetards.jpg" alt="arbres têtards">
+            <img src="images/img-slider/oiseau.jpg" alt="petit oiseau sur une branche">            
+            <img src="images/img-slider/verger.jpg" alt="verger en fleur">
+            <img src="images/img-slider/papillon.jpg" alt="papillon">
+            <img src="images/img-slider/mare-temporaire.jpg" alt="mare">            
+        </div>
 
         <!-- Bouton pour saisie des observations -->            
         <div class="btnPopup-saisie btnPopup">
@@ -173,7 +179,7 @@
         <!-- section trames naturelles -->
         <section class="trames" id="pictos-trames">
             <!-- titre de la section -->
-            <h2 class="split-banner" id="trames">Inventaire des Trames Naturelles</h2>
+            <h2 class="split-banner" id="trames">Inventaire du patrimoine naturel</h2>
             <!-- accroche -->        
             <h3 class="title-intro">PRESERVER LA TRAME VERTE ET BLEUE DU TERRITOIRE</h3>
             <!-- contenu -->
@@ -397,8 +403,8 @@
                         <div class="list-links">
                             <span class="btnClosePopup btnClose-popupLinks">&times;</span>
                             <ul>
-                                <li><a href="https://www.biolit.fr/sites/default/files/biolitheque/2018identificationbiolitabb.pdf" target="_blank">Faune et flore de l'estran</a></li>
-                                <li><a href="http://bit.ly/2OATMYd" target="_blank">Faune de l'estran</a></li>                                
+                                <li><a href="https://driaaf.ile-de-france.agriculture.gouv.fr/IMG/pdf/_924_pdf_Fiche_DSF_-_Processionnaire_du_chene_cle4a2386_cle03a3f1.pdf" target="_blank">Processionnaire du chêne</a></li>
+                                <li><a href="images/Oidium.pdf" target="_blank">Oidium</a></li>                                
                             </ul>
                         </div>
                     </div>                             
@@ -409,6 +415,8 @@
             <div class="box-consult">
                 <p>Pour consulter l'ensemble des données naturalistes du Parc naturel régional :</p>
                 <a href="http://biodiversite.parc-golfe-morbihan.bzh" target="_blank">http://biodiversite.parc-golfe-morbihan.bzh</a>
+                <p>Pour aller plus loin :</p>
+                <a href="images/3-strategieTN_pnra.pdf" target="blank">Trame noire : protéger et valoriser le ciel et l'environnement nocturne</a>
             </div>
         </section>        
  
@@ -446,7 +454,7 @@
                 <p>Politique de confidentialité</p>  
             </div>              
             <div class="creation">
-                <a href="https://www.ocelis-creation.com" target="_blank">Réalisation : <i>Ocelis Création</i></a>
+                <a href="https://www.ocelis-creation.com" target="_blank">Réalisation : <span>Ocelis Création</span></a>
             </div>               
         </aside>	
         <div class="text-polconf">
@@ -463,6 +471,8 @@
         
     </footer>
 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/fader.js"></script>
     <script src="js/burger.js"></script>    
     <script src="js/popup.js"></script>
     <script src="js/scroll.js"></script>        
