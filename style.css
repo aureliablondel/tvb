@@ -62,7 +62,7 @@ body{
     height:100vh;
     width: 0%;
     position: fixed;
-    z-index: 1;
+    z-index: 6;
     right: 0;
     top: 0;
     background-color: #2f666a;
@@ -606,6 +606,7 @@ body{
 }
 .footer-container .infos .partenaires{
     width: 40%;
+    text-align: right;
 }
 .footer-container .mentions{
     display: flex;
